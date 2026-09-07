@@ -82,14 +82,16 @@ function createChatBox(html,className) {
 
 
 
-function showLoading(){
- const html=`<p class="text"></p>
-<img src="./assets/load.gif" class="loading" width="50px">
-  let aiChatBox=createChatBox(html,"ai-chat-box")
-  chatContainer.appendChild(aiChatBox)
-  generateApiResponse(aiChatBox)
-  
-  }
+function showLoading() {
+    const html = `
+        <p class="text"></p>
+        <img src="./assets/load.gif" class="loading" width="50px">
+    `;
+
+    let aiChatBox = createChatBox(html, "ai-chat-box");
+    chatContainer.appendChild(aiChatBox);
+    generateApiResponse(aiChatBox);
+}
 
 
 chatbtn.addEventListener("click", () =>{
