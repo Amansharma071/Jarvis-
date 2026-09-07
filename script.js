@@ -24,7 +24,7 @@ let prompt=document.querySelector(".prompt")
 let chatbtn=document.querySelector(".input-area button")
 let chatContainer=document.querySelector(".chat-container")
 let h1=document.querySelector(".h1")
-let chatimg=document.querySelector("#chatbotimg#")
+let chatimg=document.querySelector("#chatbotimg")
 let chatbox=document.querySelector(".chat-box")
 
 
@@ -83,8 +83,8 @@ function createChatBox(html,className) {
 
 
 function showLoading(){
-  const html=`<p class="text"></p>
-  <img src="load.gif class="loading" width="50px">`
+ const html=`<p class="text"></p>
+<img src="./assets/load.gif" class="loading" width="50px">
   let aiChatBox=createChatBox(html,"ai-chat-box")
   chatContainer.appendChild(aiChatBox)
   generateApiResponse(aiChatBox)
